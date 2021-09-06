@@ -98,7 +98,7 @@ $(".categories").waypoint(function(direction) {
 	$(".btn-main_prev").click(function(e) {
 		$(".step-quiz.active").last().removeClass("active");
 		$(this).parent().parent().fadeOut(0);
-		$(this).parent().parent().prev(".quiz-pane").fadeIn(200);
+		$(this).parent().parent().prev(".quiz-pane").fadeIn(200); 
 	});
 
 	$('.tabs-etaps li a').click(function(event) {
