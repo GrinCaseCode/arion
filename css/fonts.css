@@ -1,0 +1,108 @@
+/* font-family: "RobotoRegular"; */
+@font-face {
+	font-family: "RobotoRegular";
+	src: url("../fonts/RobotoRegular/RobotoRegular.eot");
+	src: url("../fonts/RobotoRegular/RobotoRegular.eot?#iefix")format("embedded-opentype"),
+	url("../fonts/RobotoRegular/RobotoRegular.woff") format("woff"),
+	url("../fonts/RobotoRegular/RobotoRegular.ttf") format("truetype");
+	font-style: normal;
+	font-weight: normal;
+}
+/* font-family: "RobotoLight"; */
+@font-face {
+	font-family: "RobotoLight";
+	src: url("../fonts/RobotoLight/RobotoLight.eot");
+	src: url("../fonts/RobotoLight/RobotoLight.eot?#iefix")format("embedded-opentype"),
+	url("../fonts/RobotoLight/RobotoLight.woff") format("woff"),
+	url("../fonts/RobotoLight/RobotoLight.ttf") format("truetype");
+	font-style: normal;
+	font-weight: normal;
+}
+/* font-family: "RobotoMedium"; */
+@font-face {
+	font-family: "RobotoMedium";
+	src: url("../fonts/RobotoMedium/RobotoMedium.eot");
+	src: url("../fonts/RobotoMedium/RobotoMedium.eot?#iefix")format("embedded-opentype"),
+	url("../fonts/RobotoMedium/RobotoMedium.woff") format("woff"),
+	url("../fonts/RobotoMedium/RobotoMedium.ttf") format("truetype");
+	font-style: normal;
+	font-weight: normal;
+}
+/* font-family: "RobotoBold"; */
+@font-face {
+	font-family: "RobotoBold";
+	src: url("../fonts/RobotoBold/RobotoBold.eot");
+	src: url("../fonts/RobotoBold/RobotoBold.eot?#iefix")format("embedded-opentype"),
+	url("../fonts/RobotoBold/RobotoBold.woff") format("woff"),
+	url("../fonts/RobotoBold/RobotoBold.ttf") format("truetype");
+	font-style: normal;
+	font-weight: normal;
+}
+
+@font-face {
+	font-family: 'SFUIDisplay';
+	src: url('../fonts/SFUIDisplay-Regular.eot');
+	src: url('../fonts/SFUIDisplay-Regular.eot?#iefix') format('embedded-opentype'),
+	url('../fonts/SFUIDisplay-Regular.woff2') format('woff2'),
+	url('../fonts/SFUIDisplay-Regular.woff') format('woff'),
+	url('../fonts/SFUIDisplay-Regular.otf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'SFUIDisplay';
+	src: url('../fonts/SFUIDisplay-Light.eot');
+	src: url('../fonts/SFUIDisplay-Light.eot?#iefix') format('embedded-opentype'),
+	url('../fonts/SFUIDisplay-Light.woff2') format('woff2'),
+	url('../fonts/SFUIDisplay-Light.woff') format('woff'),
+	url('../fonts/SFUIDisplay-Light.ttf') format('truetype');
+	font-weight: 300;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'SFUIDisplay';
+	src: url('../fonts/SFUIDisplay-Medium.eot');
+	src: url('../fonts/SFUIDisplay-Medium.eot?#iefix') format('embedded-opentype'),
+	url('../fonts/SFUIDisplay-Medium.woff2') format('woff2'),
+	url('../fonts/SFUIDisplay-Medium.woff') format('woff'),
+	url('../fonts/SFUIDisplay-Medium.ttf') format('truetype');
+	font-weight: 500;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'SFUIDisplay';
+	src: url('../fonts/SFUIDisplay-Bold.eot');
+	src: url('../fonts/SFUIDisplay-Bold.eot?#iefix') format('embedded-opentype'),
+	url('../fonts/SFUIDisplay-Bold.woff2') format('woff2'),
+	url('../fonts/SFUIDisplay-Bold.woff') format('woff'),
+	url('../fonts/SFUIDisplay-Bold.otf') format('truetype');
+	font-weight: 700;
+	font-style: normal;
+}
+@font-face {
+font-family: 'Open Sans';
+src: url('../fonts/OpenSans-Light.eot');
+src: url('../fonts/OpenSans-Light.eot?#iefix') format('embedded-opentype'),
+url('../fonts/OpenSans-Light.woff') format('woff'),
+url('../fonts/OpenSans-Light.ttf') format('truetype');
+font-weight: 300;
+font-style: normal;
+}
+@font-face {
+font-family: 'Open Sans';
+src: url('../fonts/OpenSans-Regular.eot');
+src: url('../fonts/OpenSans-Regular.eot?#iefix') format('embedded-opentype'),
+url('../fonts/OpenSans-Regular.woff') format('woff'),
+url('../fonts/OpenSans-Regular.ttf') format('truetype');
+font-weight: normal;
+font-style: normal;
+}
+@font-face {
+font-family: 'Open Sans';
+src: url('../fonts/OpenSans-Bold.eot');
+src: url('../fonts/OpenSans-Bold.eot?#iefix') format('embedded-opentype'),
+url('../fonts/OpenSans-Bold.woff') format('woff'),
+url('../fonts/OpenSans-Bold.ttf') format('truetype');
+font-weight: 700;
+font-style: normal;
+}
