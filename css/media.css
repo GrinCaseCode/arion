@@ -469,6 +469,9 @@
 	color: #2b2a2f;
 	display: block;
 }
+.menu-mobile_nav > li > a {
+	text-transform: uppercase;
+}
 .menu-mobile_nav ul {
 	padding-left: 10px;
 	display: none;
