@@ -621,6 +621,9 @@
 .prices-block {
 	margin-right: 0;
 }
+.item-category .row > div:last-child {
+	order: 2;
+}
 }
 
 /* Extra Small Devices, Phones */
