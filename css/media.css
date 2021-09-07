@@ -707,7 +707,10 @@ margin-bottom: 10px;
     height: 280px !important;
 }
 .production__image img {
-	display: none;
+	max-width: 100%;
+}
+.production  {
+	padding-top: 30px;
 }
 .production-block {
 	    position: relative;
@@ -717,6 +720,7 @@ margin-bottom: 10px;
 }
 .production__image {
 	margin-left: 0;
+	    padding-top: 35px;
 	margin-bottom: 45px;
 }
 .item-category__name {
