@@ -625,6 +625,9 @@
 .item-category .row > div:last-child {
 	order: -1;
 }
+.btn-order {
+	display: none;
+}
 }
 
 /* Extra Small Devices, Phones */
