@@ -523,6 +523,9 @@
 	z-index: 1000;
 	transition: all 0.3s;
 }
+.row_footer > div:nth-child(4) {
+	padding-right: 15px;
+}
 }
 
 /* Small Devices, Tablets */
