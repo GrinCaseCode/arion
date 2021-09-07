@@ -29,7 +29,7 @@ body {
 	overflow-x: hidden;
 	margin: 0;
 background-color: #F7F6F5;
-color: #2B2A2F;
+color: #2B2A2F; 
 }
 button {
 	cursor: pointer;
@@ -802,18 +802,7 @@ position: relative;
 	background-position: center;
 	background-size: 100% 100%;
 }
-.row_news .col-lg-3 {
-    -webkit-box-flex: 0;
-    -ms-flex: 0 0 29%;
-    flex: 0 0 29%;
-    max-width: 29%;
-}
-.row_news .col-lg-9 {
-    -webkit-box-flex: 0;
-    -ms-flex: 0 0 71%;
-    flex: 0 0 71%;
-    max-width: 71%;
-}
+
 .news-big .title-min {
 	margin-bottom: 15px;
 }
@@ -1371,3 +1360,89 @@ display: none;
 .tabs-etaps li:not(.active) a:hover {
 	color: #E38149;
 }  
+.footer__title i {
+	display: none;
+}
+/*Style Sandwich*/
+.btn_nav {
+	border: none;
+	z-index: 60;
+	display: none;
+	-webkit-transition: all 0.3s;
+	-o-transition: all 0.3s;
+	transition: all 0.3s;
+	vertical-align: middle;
+	position: relative;
+}
+.btn_nav:hover {
+	opacity: 1;
+} 
+.sandwich span {
+	display: block;
+}
+.sandwich {
+	width: 30px;
+	height:28px;
+	margin: auto;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-end;
+	z-index: 20;
+	cursor: pointer;
+}
+.sw-topper {
+	position: relative;
+	top: 4px;
+	width: 29px;
+	height: 2px;
+	display: block;
+	margin: 0 auto;
+	background-color: #E38149;
+	border: medium none;
+	transition: transform 0.5s, top 0.2s;
+	/* transition-delay: 0.2s, 0s; */
+}
+.sw-bottom {
+	position: relative;
+	top: 10px;
+	width: 29px;
+	height: 2px;
+	display: block;
+	margin: 0 auto;
+	background-color: #E38149;
+	border: medium none;
+	transition: transform 0.5s, top 0.2s;
+	transition-delay: 0.2s, 0s;
+}
+.sw-footer {
+	position: relative;
+	top: 17px;
+	width: 29px;
+	height: 2px;
+	display: block;
+	background-color: #E38149;
+	border: medium none;
+	transition: all 0.5s;
+	transition-delay: 0.1s;
+}
+.sandwich.active .sw-topper {
+	top: 12px;
+	transform: rotate(45deg);
+}
+.sandwich.active .sw-bottom {
+	opacity: 0;
+}
+.sandwich.active .sw-footer {
+	top:8px;
+	width: 30px;
+	transform: rotate(-45deg);
+}
+
+/*End Sandwich*/
+.phone-mob {
+	display: none;
+}

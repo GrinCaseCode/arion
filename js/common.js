@@ -32,19 +32,26 @@ $(".item-dropdown__head").click(function() {
 	//кнопка sandwich
 	$(".btn_nav").click(function() {
 		$(".sandwich").toggleClass("active");
-		if ($(".menu").is(":hidden")) {
-			$(".menu").slideDown(200);
+		if ($(".menu-mobile").is(":hidden")) {
+			$(".menu-mobile").slideDown(200);
+			$(".header").addClass("header_menu");
 		} else {
-			$(".menu").slideUp(200);
+			$(".menu-mobile").slideUp(200);
+			$(".header").removeClass("header_menu");
 		}
 		
 	});
 
-	$(".menu a").click(function() {
-			$(".menu").slideUp(200);
-			$(".sandwich").removeClass("active");
-		});
+	$(".menu-mobile li:not('.menu_haschild') a").click(function() {
+		$(".menu-mobile").slideUp(200);
+		$(".sandwich").removeClass("active");
+		$(".header").removeClass("header_menu");
+	});
 
+	$(".menu-mobile .menu_haschild a").click(function(e) {
+		e.preventDefault();
+		$(this).siblings("ul").slideToggle(200);
+	});
 	//слайдер
 
 	$('.slider-billbord').slick({
@@ -118,6 +125,15 @@ $(".categories").waypoint(function(direction) {
 		var selectTab2 = $(this).attr("href");
 		$(selectTab2).fadeIn(200);
 	});
+
+	{
+		if ($(window).width() < 992) { 
+			$(".footer__title").click(function() {
+				$(this).toggleClass("active");
+				$(this).siblings(".footer__content").slideToggle(200);
+			});
+		}
+	}
 
 	$(".input-phone").mask("+7 (999) 999-99-99");
 
