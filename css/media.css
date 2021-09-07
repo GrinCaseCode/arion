@@ -499,6 +499,7 @@
 	color: #2b2a2f;
 }
 .menu-mobile__phones {
+	margin-bottom: 15px;
 	display: flex;
 	flex-direction: column;
 }
