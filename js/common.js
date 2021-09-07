@@ -42,7 +42,7 @@ $(".item-dropdown__head").click(function() {
 		
 	});
 
-	$(".menu-mobile li:not('.menu_haschild') a").click(function() {
+	$(".menu-mobile *:not('.menu_haschild') > a").click(function() {
 		$(".menu-mobile").slideUp(200);
 		$(".sandwich").removeClass("active");
 		$(".header").removeClass("header_menu");
