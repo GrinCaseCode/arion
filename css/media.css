@@ -1023,6 +1023,7 @@
 	}
 	.sorting-list li {
 		margin-right: 12px;
+		margin-top: 10px;
 	}
 	.item-catalog__image {
 		height: 360px;
@@ -1081,6 +1082,10 @@
 	}
 	.row_cards > div:last-child {
 		margin-bottom: 0;
+	}
+	.item-catalog__bottom .title-min {
+		margin-bottom: 0;
+		padding-right: 5px;
 	}
 }
 
