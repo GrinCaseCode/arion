@@ -25,6 +25,13 @@ $(".item-dropdown__head").click(function() {
 	$(this).parent().siblings(".item-dropdown").removeClass("active");
 	$(this).parent().siblings(".item-dropdown").find(".item-dropdown__content").slideUp(200);
 });
+
+$(".item-question__head").click(function() {
+	$(this).parent().toggleClass("active");
+	$(this).siblings().slideToggle(200);
+	$(this).parent().siblings(".item-question").removeClass("active");
+	$(this).parent().siblings(".item-question").find(".item-question__content").slideUp(200);
+});
 	//плавный скролл
 	$(".navigat li a").mPageScroll2id();
 
@@ -52,6 +59,13 @@ $(".item-dropdown__head").click(function() {
 		e.preventDefault();
 		$(this).siblings("ul").slideToggle(200);
 	});
+
+	$(".item-sidebar__head").click(function() {
+				$(this).parent().toggleClass("active");
+				$(this).siblings(".item-sidebar__content").slideToggle(200);
+				$(this).parent().siblings(".item-sidebar").removeClass("active");
+				$(this).parent().siblings(".item-sidebar").find(".item-sidebar__content").slideUp(200);
+			});
 	//слайдер
 
 	$('.slider-billbord').slick({
@@ -88,10 +102,45 @@ $(".item-dropdown__head").click(function() {
 		nextArrow: '<div class="slick-next slick-arrow"><svg width="101" height="8" viewBox="0 0 101 8" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M100.354 4.35355C100.549 4.15829 100.549 3.84171 100.354 3.64645L97.1716 0.464466C96.9763 0.269204 96.6597 0.269204 96.4645 0.464466C96.2692 0.659728 96.2692 0.976311 96.4645 1.17157L99.2929 4L96.4645 6.82843C96.2692 7.02369 96.2692 7.34027 96.4645 7.53553C96.6597 7.7308 96.9763 7.7308 97.1716 7.53553L100.354 4.35355ZM0 4.5H100V3.5H0V4.5Z" fill="#2B2A2F"/></svg><div/>',
 	});
 
+	$('.slider-portfolio').slick({
+		arrows: true,
+		dots: false,
+		infinite: true,
+		slidesToShow:4,
+		slidesToScroll: 1,
+		prevArrow: '<div class="slick-prev slick-arrow"><svg width="101" height="8" viewBox="0 0 101 8" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M0.646446 4.35355C0.451187 4.15829 0.451187 3.84171 0.646446 3.64645L3.82843 0.464466C4.02369 0.269204 4.34027 0.269204 4.53554 0.464466C4.7308 0.659728 4.7308 0.976311 4.53554 1.17157L1.70711 4L4.53554 6.82843C4.7308 7.02369 4.7308 7.34027 4.53554 7.53553C4.34027 7.7308 4.02369 7.7308 3.82843 7.53553L0.646446 4.35355ZM101 4.5L1 4.5V3.5L101 3.5V4.5Z" fill="#2B2A2F"/></svg><div/>',
+		nextArrow: '<div class="slick-next slick-arrow"><svg width="101" height="8" viewBox="0 0 101 8" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M100.354 4.35355C100.549 4.15829 100.549 3.84171 100.354 3.64645L97.1716 0.464466C96.9763 0.269204 96.6597 0.269204 96.4645 0.464466C96.2692 0.659728 96.2692 0.976311 96.4645 1.17157L99.2929 4L96.4645 6.82843C96.2692 7.02369 96.2692 7.34027 96.4645 7.53553C96.6597 7.7308 96.9763 7.7308 97.1716 7.53553L100.354 4.35355ZM0 4.5H100V3.5H0V4.5Z" fill="#2B2A2F"/></svg><div/>',
+		responsive: [
+		{
+			breakpoint: 992,
+			settings: {
+				slidesToShow:3,
+			}
+		},
+		{
+			breakpoint: 768,
+			settings: {
+				slidesToShow:2,
+			}
+		}
+		]
+	});
+
+	$('.slider-top').slick({
+		arrows: true,
+		dots: false,
+		infinite: true,
+		slidesToShow:1,
+		appendArrows: $(".content-slider"),
+		slidesToScroll: 1,
+		prevArrow: '<div class="slick-prev slick-arrow"><svg width="101" height="8" viewBox="0 0 101 8" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M0.646446 4.35355C0.451187 4.15829 0.451187 3.84171 0.646446 3.64645L3.82843 0.464466C4.02369 0.269204 4.34027 0.269204 4.53554 0.464466C4.7308 0.659728 4.7308 0.976311 4.53554 1.17157L1.70711 4L4.53554 6.82843C4.7308 7.02369 4.7308 7.34027 4.53554 7.53553C4.34027 7.7308 4.02369 7.7308 3.82843 7.53553L0.646446 4.35355ZM101 4.5L1 4.5V3.5L101 3.5V4.5Z" fill="#2B2A2F"/></svg><div/>',
+		nextArrow: '<div class="slick-next slick-arrow"><svg width="101" height="8" viewBox="0 0 101 8" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M100.354 4.35355C100.549 4.15829 100.549 3.84171 100.354 3.64645L97.1716 0.464466C96.9763 0.269204 96.6597 0.269204 96.4645 0.464466C96.2692 0.659728 96.2692 0.976311 96.4645 1.17157L99.2929 4L96.4645 6.82843C96.2692 7.02369 96.2692 7.34027 96.4645 7.53553C96.6597 7.7308 96.9763 7.7308 97.1716 7.53553L100.354 4.35355ZM0 4.5H100V3.5H0V4.5Z" fill="#2B2A2F"/></svg><div/>',
+	});
+
 
 {
 		if ($(window).width() > 768) { 
-			$(".categories").waypoint(function(direction) {
+			$(".section-top").waypoint(function(direction) {
 		if (direction === "down") {
 			$(".btn-order").addClass("active");
 		} else if (direction === "up") {
@@ -141,7 +190,59 @@ $(".item-dropdown__head").click(function() {
 		}
 	}
 
+	$(".btn-main_filter").click(function(e) {
+		e.preventDefault();
+		$(".sidebar-catalog").slideToggle(400);
+	});
+
 	$(".input-phone").mask("+7 (999) 999-99-99");
+
+	/*range slider*/
+
+	$(function() {
+		var $range = $(".range-catalog__input"),
+		$from = $(".control-input__from"),
+		$to = $(".control-input__to"),
+		min = 0,
+		max = 12000;
+		$range.ionRangeSlider({
+			type: "double",
+			min: min,
+			max: max,
+			from: 100,
+			to: 10000,
+			prettify_enabled: true,
+			onChange: function(data) {
+				updateValues()
+			}
+		});
+
+
+		$range = $range.data("ionRangeSlider");
+		var updateValues = function() {
+			var res = $range.result;
+			$from.val(res.from, true);
+			$to.val(res.to,true)
+		};
+		$from.on("focus", function() {
+			this.value = this.value;
+			this.focus();
+			this.selectionStart = this.value.length
+		}).on("input", function() {
+			$range.update({
+				from: this.value
+			})
+		}).on("blur", updateValues);
+		$to.on("focus", function() {
+			this.value = this.value;
+			this.focus();
+			this.selectionStart = this.value.length
+		}).on("input", function() {
+			$range.update({
+				to: this.value
+			})
+		}).on("blur", updateValues)
+	});
 
 
 	 // стайлер для select
