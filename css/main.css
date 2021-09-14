@@ -2526,7 +2526,7 @@ opacity: 0;
 .page-numbers {
 	width: 30px;
 	height: 30px;
-	margin: 0 25px;
+	margin: 0 15px;
 	display: flex;
 	align-items: center;
 	justify-content: center;
