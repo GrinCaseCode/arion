@@ -74,6 +74,12 @@
 	.sorting-list {
 		margin-left: 15px;
 	}
+	.item-portfolio__image {
+		height: 480px;
+	}
+	.article__image {
+		height: 338px;
+	}
 }
 
 /* Large Devices, Wide Screens */
@@ -221,6 +227,37 @@
 	.item-price__content p {
 		line-height: 26px;
 		margin-bottom: 15px;
+	}
+	.item-portfolio__image {
+		height: 390px;
+	}
+	.item-portfolio {
+		margin-bottom: 70px;
+	}
+	.title-middle {
+		font-size: 22px;
+		line-height: 29px;
+	}
+	.item-portfolio {
+		line-height: 26px;
+	}
+	.item-portfolio__controls .slick-prev {
+		margin-right: 11px;
+	}
+	.nav-billbord {
+		max-width: 700px;
+	}
+	.item-article {
+		line-height: 24px;
+	}
+	.item-article__image {
+		height: 355px;
+	}
+	.articles {
+		padding-bottom: 60px;
+	}
+	.article__image {
+		height: 260px;
 	}
 }
 
@@ -708,6 +745,58 @@
 	.content-slider {
 		padding-top: 70px;
 	}
+	.item-portfolio__controls {
+		margin: 20px 0;
+		justify-content: center;
+	}
+	.item-portfolio__controls .slick-next {
+		margin-left: 15px;
+	}
+	.item-portfolio__controls .slick-prev {
+		margin-right: 15px;
+	}
+	.item-portfolio {
+		margin-bottom: 40px;
+	}
+	.portfolio-page + .partners {
+		padding-bottom: 50px;
+	}
+	.nav-billbord {
+		max-width: 595px;
+	}
+	.item-article .row > div:nth-child(2) {
+		order: -2;
+	}
+	.item-article {
+		margin-bottom: 35px;
+	}
+	.page-numbers {
+		margin: 0 10px;
+	}
+	.article__image {
+    height: 422px;
+}
+.article-info {
+	margin-bottom: 20px;
+}
+.etaps_page {
+	padding-top: 0;
+}
+.etaps_page .tabs-etaps {
+	padding-bottom: 15px;
+	max-width: 100%;
+}
+.portfolio_page {
+	padding-bottom: 50px;
+}
+.text-portfolio {
+    padding-top: 25px;
+    line-height: 25px;
+    }
+    .article {
+    	padding-bottom: 30px;
+    }
+
 }
 
 /* Small Devices, Tablets */
@@ -893,6 +982,50 @@
 	.item-card {
 		height: initial;
 	}
+	.portfolio-page {
+		padding-top: 0;
+	}
+	.item-portfolio__image {
+		height: 292px;
+	}
+	.item-article__image {
+		height: 290px;
+	}
+	.item-article__date {
+		margin-top: 15px;
+		margin-bottom: 10px;
+	}
+	.item-article .title-middle {
+		margin-bottom: 15px;
+	}
+	.page-numbers:not(.next):nth-child(n+6) {
+		display: none;
+	}
+	.article {
+    padding-bottom: 40px;
+    line-height: 24px;
+}
+.article p {
+	margin-bottom: 15px;
+}
+.article__image {
+	height: auto;
+}
+.article__image img {
+	width: auto;
+	height: auto; 
+	max-width: 100%;
+	object-fit: inherit;
+}
+.row_article {
+	margin-bottom: 25px;
+}
+.etaps_page .title-middle {
+    padding-bottom: 25px;
+}
+.etaps_page .tabs-etaps {
+	max-width: initial;
+}
 }
 
 /* Extra Small Devices, Phones */
@@ -1086,6 +1219,59 @@
 	.item-catalog__bottom .title-min {
 		margin-bottom: 0;
 		padding-right: 5px;
+	}
+	.item-portfolio__image {
+		margin: 0 5px;
+	}
+	.item-portfolio__slider {
+		margin: 0 -5px;
+	}
+	.item-portfolio__image {
+		height: 243px;
+	}
+	.portfolio-page + .partners {
+		padding-top: 20px;
+		padding-bottom: 40px;
+	}
+	.nav-billbord {
+		font-size: 13px;
+	}
+	.item-article__image {
+		height: 210px;
+	}
+	.item-article__image::after {
+		width: 60px;
+		height: 60px;
+		background-size: 20px auto;
+	}
+	.title-middle {
+		font-size: 19px;
+		line-height: 28px;
+	}
+	.item-article .title-middle {
+		margin-bottom: 10px;
+	}
+	.page-numbers.prev, .page-numbers.next {
+		width: 60px;
+	}
+	.pager {
+		padding: 0 64px;
+	}
+	.articles {
+		padding-bottom: 40px;
+	}
+	.item-article {
+		margin-bottom: 30px;
+	}
+	.article .title-middle {
+		margin-bottom: 15px;
+	}
+	.article-info {
+		padding: 15px;
+		padding-bottom: 5px;
+	}
+	.article {
+		padding-bottom: 30px;
 	}
 }
 
