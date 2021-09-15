@@ -36,6 +36,13 @@ $(".item-question__head").click(function() {
 	$(".navigat li a").mPageScroll2id();
 
 
+$(".dropdown_haschild > a").click(function(e) {
+		e.preventDefault();
+		$(this).parent().addClass("active");
+		$(this).parent().siblings(".dropdown_haschild").removeClass("active");
+	});
+
+
 	//кнопка sandwich
 	$(".btn_nav").click(function() {
 		$(".sandwich").toggleClass("active");
@@ -49,14 +56,16 @@ $(".item-question__head").click(function() {
 		
 	});
 
-	$(".menu-mobile *:not('.menu_haschild') > a").click(function() {
-		$(".menu-mobile").slideUp(200);
-		$(".sandwich").removeClass("active");
-		$(".header").removeClass("header_menu");
+
+	$(".menu-mobile .menu_haschild > a").click(function(e) {
+		e.preventDefault();
+
+		$(this).siblings("ul").slideToggle(200);
 	});
 
-	$(".menu-mobile .menu_haschild a").click(function(e) {
+	$(".menu-mobile .dropdown_haschild > a").click(function(e) {
 		e.preventDefault();
+		$(this).parent().siblings().find("ul").slideUp(200);
 		$(this).siblings("ul").slideToggle(200);
 	});
 
