@@ -10,12 +10,14 @@
 }
 @media only screen and (max-width : 1605px) {
 	.number-section {
-		display: none;
+		display: none; 
 	}
 	.footer {
 		font-size: 15px;
 	}
 }
+
+
 @media only screen and (max-width : 1400px) {
 	.logos-block::before {
 		bottom: 60px;
