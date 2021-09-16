@@ -14,7 +14,7 @@
 	}
 	.footer {
 		font-size: 15px;
-	}
+	} 
 }
 
 
@@ -84,6 +84,22 @@
 	}
 	.review-doc {
     height: 343px;
+}
+.item-offer .col-lg-4 > * {
+	margin-left: -15px;
+}
+.item-offer .col-lg-4 {
+	padding-right: 5px;
+	padding-left: 0px;
+}
+.item-offer__image {
+	max-width: 730px;
+}
+.about-block__info {
+    padding: 60px 30px;
+    padding-right: 0;
+    padding-bottom: 20px;
+    font-size: 15px;
 }
 }
 
@@ -266,6 +282,30 @@
 	}
 	.review-doc {
     height: 278px;
+}
+.item-offer .col-lg-4 > * {
+	margin-left: 0;
+}
+.item-offer .col-lg-4 {
+	padding-left: 0px;
+	padding-right: 15px;
+}
+.item-offer .title-min {
+	margin-bottom: 10px;
+}
+.row_about {
+	margin-top: 0;	
+}
+.about-block .title-min {
+	margin-bottom: 9px;
+}
+.about-block__info {
+	font-size: 14px;
+	line-height: 24px;
+}
+.name-about {
+	left: 40px;
+	bottom: 40px;
 }
 }
 
@@ -817,6 +857,32 @@
 .reviews {
 	padding-bottom: 40px;
 }
+.item-offer .col-lg-4 {
+	padding-left: 15px;
+}
+.item-offer__date {
+	margin-bottom: 8px;
+}
+.item-offer__image {
+	margin-bottom: 15px;
+}
+.item-offer {
+	margin-bottom: 25px;
+	line-height: 25px;
+}
+.offers {
+	padding-bottom: 60px;
+}
+.row_article .col-lg-3.col-6 {
+	order: 2;
+}
+.about-block__info {
+	padding-top: 20px;
+	padding-right: 25px;
+}
+.row_about {
+	margin-top: 15px;
+}
 }
 
 
@@ -1052,6 +1118,38 @@
 	max-width: 255px;
 	margin: 0 auto;
 	margin-bottom: 25px;
+}
+.item-offer__image {
+    height: 230px;
+    }
+    .billbord-page p br {
+    	display: none;
+    }
+    .about-block__image {
+    height: 465px;
+}
+.article + .partners {
+    padding-top: 20px;
+    padding-bottom: 40px;
+}
+.billbord-page_about .billbord-info__name {
+    font-size: 11px;
+    line-height: 18px;
+    }
+    .billbord-page_about .billbord-info__value {
+    font-size: 19px;
+    margin-bottom: 5px;
+    line-height: 27px;
+}
+.billbord-page .billbord-bottom .billbord-info {
+    padding-right: 13px;
+    padding-left: 5px;
+}
+.billbord-page_about .billbord-info::after {
+	right: 0;
+}
+.billbord-page_about .billbord-page__content {
+    height: 400px;
 }
 }
   
@@ -1302,6 +1400,44 @@
 	.article {
 		padding-bottom: 30px;
 	}
+	.item-offer__image {
+    height: 154px;
+}
+.item-offer p {
+	margin-bottom: 12px;
+}
+.offers {
+	padding-bottom: 50px;
+}
+.name-about {
+    left: 19px;
+    bottom: 16px;
+}
+.about-block__image {
+    height: 320px;
+}
+.about-block__info {
+	padding-left: 20px;
+	padding-right: 20px;
+}
+.billbord-page_about .billbord-info__name {
+    font-size: 8px;
+    line-height: 13px;
+}
+.billbord-page_about .billbord-info__value {
+    font-size: 17px;
+    margin-bottom: 1px;
+    line-height: 27px;
+}
+.billbord-page_about .billbord-info__value sup {
+    font-size: 12px;
+}
+.billbord-page .billbord-bottom {
+	margin-top: 20px;
+}
+.billbord-page_about .billbord-page__content {
+    height: 330px;
+}
 }
 
 /* Custom, iPhone Retina */
