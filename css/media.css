@@ -7,6 +7,9 @@
 		margin-left: 0;
 		margin-right: 0;
 	}
+	.title-map {
+		bottom: 150px;
+	}
 }
 @media only screen and (max-width : 1605px) {
 	.number-section {
@@ -101,6 +104,22 @@
     padding-bottom: 20px;
     font-size: 15px;
 }
+.contacts-page {
+	font-size: 14px;
+	line-height: 24px;
+}
+.contacts-page .title-min {
+    margin-top: 8px;
+    margin-bottom: 7px;
+    font-size: 16px;
+    }
+    .contacts-page__left {
+    min-height: 537px;
+    padding-bottom: 110px;
+}
+.title-map {
+		bottom: 100px;
+	} 
 }
 
 /* Large Devices, Wide Screens */
@@ -307,6 +326,28 @@
 	left: 40px;
 	bottom: 40px;
 }
+.tab-contact {
+    height: 130px;
+    }
+    .contacts-page .title-section {
+    padding-bottom: 0;
+}
+.contacts-page__left {
+    min-height: inherit;
+    padding-bottom: 0;
+}
+.tabs-contacts {
+	margin-top: 20px;	
+}
+.contacts-page::before {
+	height: 59%;	
+}
+.bottom-contacts { 
+	margin-top: 60px;	
+}
+.title-map {
+		bottom: 50px;
+	}
 }
 
 /* Medium Devices, Desktops */
@@ -643,7 +684,7 @@
 		padding: 20px 15px;
 		padding-bottom: 140px;
 		display: none;
-		background-color: #fff;
+		background-color: #F7F6F5;
 	}
 	.header__contacts {
 		font-size: 14px;
@@ -697,8 +738,7 @@
 	}
 	.header_menu,
 	.header.fixed {
-		box-shadow: 0 0 1px #ccc;
-		background-color: #fff;
+		background-color: #F7F6F5;
 	}
 	.header {
 		padding-bottom: 4px;
@@ -882,6 +922,31 @@
 }
 .row_about {
 	margin-top: 15px;
+}
+.header + * {
+	margin-top: 83px;
+}
+.breadcumbs {
+	padding: 20px 0;
+}
+.contacts-page::before {
+	display: none;
+}
+.tab-container-contacts {
+	margin-right: 0;
+	margin-top: 20px;
+}
+.bottom-contacts__item {
+	margin-bottom: 20px;
+}
+.contacts-page {
+	padding-bottom: 60px;
+}
+.bottom-contacts {
+	margin-top: 35px;
+}
+.title-map {
+	bottom: 0;
 }
 }
 
@@ -1150,6 +1215,29 @@
 }
 .billbord-page_about .billbord-page__content {
     height: 400px;
+}
+.tabs-contacts {
+	flex-wrap: wrap;
+}
+.tabs-contacts li {
+	margin-bottom: 20px;
+	width: 33%;
+}
+.tabs-contacts li:nth-child(1),
+.tabs-contacts li:nth-child(2) {
+width: 50%;
+order: 2;
+}
+a.tab-contact::after {
+	width: 30px;
+	height: 30px;
+	background-size: 20px auto;
+}
+.col_pl {
+	padding-left: 15px;
+}
+.bottom-contacts {
+	margin-top: 15px;
 }
 }
   
@@ -1437,6 +1525,37 @@
 }
 .billbord-page_about .billbord-page__content {
     height: 330px;
+}
+.tabs-contacts {
+	margin: 0 -5px;
+	margin-top: 20px;
+}
+.tab-contact {
+	margin: 0 5px;
+}
+.tab-contact {
+	height: 90px;
+}
+.title-map {
+    bottom: 0;
+    font-size: 13px;
+    padding: 10px 20px;
+}
+.title-map img {
+	max-width: 20px;
+	margin-right: 10px;
+}
+.tab-pane-contacts > img {
+    transform: scale(1.5);
+    margin-bottom: 50px;
+    margin-top: 70px;
+}
+.tab-container-contacts #tab_contacts2 > img {
+	transform-origin: 16% 50%;
+}
+.title-map {
+	z-index: 2;
+	bottom: -40px;
 }
 }
 

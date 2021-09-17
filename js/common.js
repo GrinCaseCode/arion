@@ -218,6 +218,15 @@ prevArrow: '<div class="slick-prev slick-arrow"><svg width="101" height="8" view
 		$(selectTab2).fadeIn(200);
 	});
 
+	$('a.tab-contact').click(function(event) {
+		event.preventDefault();
+		$(this).parent().parent().find("li").removeClass('active');
+		$(this).parent().addClass('active');
+		$(".tab-pane-contacts").fadeOut(0);
+		var selectTab2 = $(this).attr("href");
+		$(selectTab2).fadeIn(200);
+	});
+
 	{
 		if ($(window).width() < 992) { 
 			$(".footer__title").click(function() {
