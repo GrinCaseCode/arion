@@ -19,8 +19,8 @@
 	<link rel="stylesheet" href="libs/slick-1.5.9/slick/slick.css" />
 	<link rel="stylesheet" href="libs/slick-1.5.9/slick/slick-theme.css" />
 	<link rel="stylesheet" href="css/fonts.css" />
-	<link rel="stylesheet" href="css/main.css?ver=1.12" /> 
-	<link rel="stylesheet" href="css/media.css?ver=1.12" />
+	<link rel="stylesheet" href="css/main.css?ver=1.20" /> 
+	<link rel="stylesheet" href="css/media.css?ver=1.20" />
 </head>
 <body>
 
@@ -39,7 +39,15 @@
 								<p>Пн-Пт 9:00 до 19:00  |  Сб-Вс выходной</p>
 							</div>
 							<div class="header__contacts">
-								<p>Ваш город: <a href="#" class="link-city">Москва</a></p>
+								<div class="city-wrap">
+									<span>Ваш город: </span>
+									<select>
+										<option value="1">Москва</option>
+										<option value="1">Санкт-Петербург</option>
+										<option value="1">Казань</option>
+										<option value="1">Екатеринбург</option>
+									</select>
+								</div>
 								<p>E-mail: <a href="mailto:in@rpk-arion.ru">in@rpk-arion.ru</a></p>
 							</div>
 						</div>
@@ -412,7 +420,15 @@
 						<p>Пн-Пт 9:00 до 19:00  |  Сб-Вс выходной</p>
 					</div>
 					<div class="header__contacts">
-						<p>Ваш город: <a href="#" class="link-city">Москва</a></p>
+						<div class="city-wrap">
+							<span>Ваш город: </span>
+							<select>
+								<option value="1">Москва</option>
+								<option value="1">Санкт-Петербург</option>
+								<option value="1">Казань</option>
+								<option value="1">Екатеринбург</option>
+							</select>
+						</div>
 						<p>E-mail: <a href="mailto:in@rpk-arion.ru">in@rpk-arion.ru</a></p>
 					</div>
 					<div class="menu-mobile__phones">
@@ -430,9 +446,9 @@
 					<div class="title-section">Лучшие материалы для изготовления медицинских масок</div>
 					<div class="title-min">Навигация:</div>
 					<ul class="nav-billbord" style="columns: 1">
-						<li class="active"><a href="#">Шелкография</a></li>
-						<li><a href="#">Примеры работ</a></li>
-						<li><a href="#">Цены</a></li>
+						<li><a href="#nav_article1">Шелкография</a></li>
+						<li><a href="#nav_article2">Примеры работ</a></li>
+						<li><a href="#nav_article3">Цены</a></li>
 					</ul>
 				</div>
 			</div>
@@ -447,7 +463,7 @@
 
 		<div class="article">
 			<div class="container">
-				<div class="row row_article">
+				<div class="row row_article" id="nav_article1">
 					<div class="col-lg-6">
 						<div class="title-middle">Самостоятельное изготовление масок.</div>
 						<p>Commodo commodo est leo, nunc ante cras lacus, proin. Urna, diam accumsan morbi tristique mauris commodo. Etiam felis, lorem tortor, eu. Urna aliquam elementum tristique sit. Mattis vulputate enim integer morbi. Nisi, vel pharetra pretium ridiculus arcu et vestibulum in et. Sodales fringilla ultricies lectus phasellus commodo, sed nisl. Eu arcu ultricies hendrerit urna massa ornare quam. Neque, sit sem varius nunc nunc aliquam varius.</p>
@@ -459,7 +475,7 @@
 						</div>
 					</div>
 				</div>
-				<div class="row row_article">
+				<div class="row row_article" id="nav_article2">
 					<div class="col-lg-6">
 						<div class="title-middle">Самодельные маси против вирусов.</div>
 						<p>Commodo commodo est leo, nunc ante cras lacus, proin. Urna, diam accumsan morbi tristique mauris commodo. Etiam felis, lorem tortor, eu. Urna aliquam elementum tristique sit. Mattis vulputate enim integer morbi. Nisi, vel pharetra pretium ridiculus arcu et vestibulum in et. Sodales fringilla ultricies lectus phasellus commodo, sed nisl. Eu arcu ultricies hendrerit urna massa ornare quam. Neque, sit sem varius nunc nunc aliquam varius.</p>
@@ -471,7 +487,7 @@
 						</div>
 					</div>
 				</div>
-				<div class="row row_article">
+				<div class="row row_article" id="nav_article3">
 					<div class="col-lg-6">
 						<div class="title-middle">Из какого материала лучше всего изготавливать самодельные маски.</div>
 						<p>Commodo commodo est leo, nunc ante cras lacus, proin. Urna, diam accumsan morbi tristique mauris commodo. Etiam felis, lorem tortor, eu. Urna aliquam elementum tristique sit. Mattis vulputate enim integer morbi. Nisi, vel pharetra pretium ridiculus arcu et vestibulum in et. Sodales fringilla ultricies lectus phasellus commodo, sed nisl. Eu arcu ultricies hendrerit urna massa ornare quam. Neque, sit sem varius nunc nunc aliquam varius.</p>
@@ -594,7 +610,7 @@
 <script src="libs/mask/jquery.maskedinput.js"></script>
 <script src="libs/ion.rangeSlider-master/js/ion.rangeSlider.min.js"></script>
 <script src="libs/jQueryFormStyler-master/jquery.formstyler.min.js"></script>
-<script src="js/common.js?ver=1.12"></script>
+<script src="js/common.js?ver=1.20"></script>
 <!-- Yandex.Metrika counter --><!-- /Yandex.Metrika counter -->
 <!-- Google Analytics counter --><!-- /Google Analytics counter -->
 </body>

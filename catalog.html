@@ -19,8 +19,8 @@
 	<link rel="stylesheet" href="libs/slick-1.5.9/slick/slick.css" />
 	<link rel="stylesheet" href="libs/slick-1.5.9/slick/slick-theme.css" />
 	<link rel="stylesheet" href="css/fonts.css" />
-	<link rel="stylesheet" href="css/main.css?ver=1.12" />
-	<link rel="stylesheet" href="css/media.css?ver=1.12" />
+	<link rel="stylesheet" href="css/main.css?ver=1.20" />
+	<link rel="stylesheet" href="css/media.css?ver=1.20" />
 </head>
 <body>
 
@@ -39,7 +39,15 @@
 								<p>Пн-Пт 9:00 до 19:00  |  Сб-Вс выходной</p>
 							</div>
 							<div class="header__contacts">
-								<p>Ваш город: <a href="#" class="link-city">Москва</a></p>
+								<div class="city-wrap">
+									<span>Ваш город: </span>
+									<select>
+										<option value="1">Москва</option>
+										<option value="1">Санкт-Петербург</option>
+										<option value="1">Казань</option>
+										<option value="1">Екатеринбург</option>
+									</select>
+								</div>
 								<p>E-mail: <a href="mailto:in@rpk-arion.ru">in@rpk-arion.ru</a></p>
 							</div>
 						</div>
@@ -412,7 +420,15 @@
 						<p>Пн-Пт 9:00 до 19:00  |  Сб-Вс выходной</p>
 					</div>
 					<div class="header__contacts">
-						<p>Ваш город: <a href="#" class="link-city">Москва</a></p>
+						<div class="city-wrap">
+							<span>Ваш город: </span>
+							<select>
+								<option value="1">Москва</option>
+								<option value="1">Санкт-Петербург</option>
+								<option value="1">Казань</option>
+								<option value="1">Екатеринбург</option>
+							</select>
+						</div>
 						<p>E-mail: <a href="mailto:in@rpk-arion.ru">in@rpk-arion.ru</a></p>
 					</div>
 					<div class="menu-mobile__phones">
@@ -788,9 +804,9 @@
 							<div class="sidebar-block">
 								<div class="title-min">Навигация:</div>
 								<ul class="sidebar-nav">
-									<li><a href="#">Каталог продукции</a></li>
-									<li><a href="#">Услуги по обработке</a></li>
-									<li><a href="#">Последние заявки</a></li>
+									<li><a href="#sect_cat1">Каталог продукции</a></li>
+									<li><a href="#sect_cat2">Услуги по обработке</a></li>
+									<li><a href="#sect_cat3">Последние заявки</a></li>
 								</ul>
 							</div>
 						</div>
@@ -813,7 +829,7 @@
 								</div>
 							</div>
 						</div>
-						<div class="sorting-line">
+						<div class="sorting-line" id="sect_cat1">
 							<p>Сортировать по:</p>
 							<div class="item-form">
 								<select>
@@ -822,15 +838,21 @@
 									<option value="1">По дате</option>
 								</select>
 							</div>
-							<ul class="sorting-list">
-								<li class="active"><a href="#">С капюшоном</a></li>
-								<li><a href="#">С рукавами</a></li>
-								<li><a href="#">Верхняя одежда</a></li>
-								<li class="active"><a href="#">Еще</a></li>
-							</ul>
+							<div class="sorting-wrap">
+								<ul class="sorting-list">
+									<li class="active"><a href="#">С капюшоном</a></li>
+									<li><a href="#">С рукавами</a></li>
+									<li><a href="#">Верхняя одежда</a></li>
+									<li><a href="#">С рукавами</a></li>
+									<li><a href="#">Верхняя одежда</a></li>
+									<li><a href="#">С рукавами</a></li>
+									<li><a href="#">Верхняя одежда</a></li>
+								</ul>
+								<a href="#" class="sorting-more">Еще</a>
+							</div>
 							<ul class="type-grid">
-								<li class="active"><a href="#"><svg width="40" height="41" viewBox="0 0 40 41" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M31.6667 5.08691H8.33333C6.5 5.08691 5 6.58691 5 8.42025V31.7536C5 33.5869 6.5 35.0869 8.33333 35.0869H31.6667C33.5 35.0869 35 33.5869 35 31.7536V8.42025C35 6.58691 33.5 5.08691 31.6667 5.08691ZM31.6667 8.42025V13.4202H8.33333V8.42025H31.6667ZM31.6667 16.7536V23.4202H8.33333V16.7536H31.6667ZM8.33333 31.7536V26.7536H31.6667V31.7536H8.33333Z" fill="#BDBDBD"/></svg></a></li>
-								<li><a href="#"><svg width="40" height="41" viewBox="0 0 40 41" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M33.3333 5.08691H8.33333C6.5 5.08691 5 6.58691 5 8.42025V31.7536C5 33.5869 6.5 35.0869 8.33333 35.0869H33.3333C35.1667 35.0869 36.6667 33.5869 36.6667 31.7536V8.42025C36.6667 6.58691 35.1667 5.08691 33.3333 5.08691ZM33.3333 8.42025V13.4202H8.33333V8.42025H33.3333ZM25 31.7536H16.6667V16.7536H25V31.7536ZM8.33333 16.7536H13.3333V31.7536H8.33333V16.7536ZM28.3333 31.7536V16.7536H33.3333V31.7536H28.3333Z" fill="#BDBDBD"/></svg></a></li>
+								<li class="active"><a href="catalog.html"><svg width="40" height="41" viewBox="0 0 40 41" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M31.6667 5.08691H8.33333C6.5 5.08691 5 6.58691 5 8.42025V31.7536C5 33.5869 6.5 35.0869 8.33333 35.0869H31.6667C33.5 35.0869 35 33.5869 35 31.7536V8.42025C35 6.58691 33.5 5.08691 31.6667 5.08691ZM31.6667 8.42025V13.4202H8.33333V8.42025H31.6667ZM31.6667 16.7536V23.4202H8.33333V16.7536H31.6667ZM8.33333 31.7536V26.7536H31.6667V31.7536H8.33333Z" fill="#BDBDBD"/></svg></a></li>
+								<li><a href="catalog-grid.html"><svg width="40" height="41" viewBox="0 0 40 41" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M33.3333 5.08691H8.33333C6.5 5.08691 5 6.58691 5 8.42025V31.7536C5 33.5869 6.5 35.0869 8.33333 35.0869H33.3333C35.1667 35.0869 36.6667 33.5869 36.6667 31.7536V8.42025C36.6667 6.58691 35.1667 5.08691 33.3333 5.08691ZM33.3333 8.42025V13.4202H8.33333V8.42025H33.3333ZM25 31.7536H16.6667V16.7536H25V31.7536ZM8.33333 16.7536H13.3333V31.7536H8.33333V16.7536ZM28.3333 31.7536V16.7536H33.3333V31.7536H28.3333Z" fill="#BDBDBD"/></svg></a></li>
 							</ul>
 						</div>
 						<div class="item-catalog">
@@ -1313,7 +1335,7 @@
 								<div class="col-lg-3 col-6">
 									<div class="item-checkbox">
 										<label>
-											<input type="checkbox" checked="checked" />
+											<input type="radio" checked="checked" name="r_q1" />
 											<span class="item-checkbox__icon"></span>
 											<span class="item-checkbox__text">На производстве</span>
 										</label>
@@ -1322,7 +1344,7 @@
 								<div class="col-lg-3 col-6">
 									<div class="item-checkbox">
 										<label>
-											<input type="checkbox"/>
+											<input type="radio" name="r_q1"/>
 											<span class="item-checkbox__icon"></span>
 											<span class="item-checkbox__text">Корпоративная одежда</span>
 										</label>
@@ -1331,7 +1353,7 @@
 								<div class="col-lg-3 col-6">
 									<div class="item-checkbox">
 										<label>
-											<input type="checkbox"/>
+											<input type="radio" name="r_q1"/>
 											<span class="item-checkbox__icon"></span>
 											<span class="item-checkbox__text">Лонгслив без утепеления</span>
 										</label>
@@ -1340,7 +1362,7 @@
 								<div class="col-lg-3 col-6">
 									<div class="item-checkbox">
 										<label>
-											<input type="checkbox"/>
+											<input type="radio" name="r_q1"/>
 											<span class="item-checkbox__icon"></span>
 											<span class="item-checkbox__text">Олимпийка тенкая</span>
 										</label>
@@ -1357,7 +1379,7 @@
 								<div class="col-lg-3 col-6">
 									<div class="item-checkbox">
 										<label>
-											<input type="checkbox" checked="checked" />
+											<input type="radio" checked="checked" name="r_q2" />
 											<span class="item-checkbox__icon"></span>
 											<span class="item-checkbox__text">На производстве</span>
 										</label>
@@ -1366,7 +1388,7 @@
 								<div class="col-lg-3 col-6">
 									<div class="item-checkbox">
 										<label>
-											<input type="checkbox"/>
+											<input type="radio" name="r_q2"/>
 											<span class="item-checkbox__icon"></span>
 											<span class="item-checkbox__text">Корпоративная одежда</span>
 										</label>
@@ -1375,7 +1397,7 @@
 								<div class="col-lg-3 col-6">
 									<div class="item-checkbox">
 										<label>
-											<input type="checkbox"/>
+											<input type="radio" name="r_q2"/>
 											<span class="item-checkbox__icon"></span>
 											<span class="item-checkbox__text">Лонгслив без утепеления</span>
 										</label>
@@ -1384,7 +1406,7 @@
 								<div class="col-lg-3 col-6">
 									<div class="item-checkbox">
 										<label>
-											<input type="checkbox"/>
+											<input type="radio" name="r_q2"/>
 											<span class="item-checkbox__icon"></span>
 											<span class="item-checkbox__text">Олимпийка тенкая</span>
 										</label>
@@ -1402,7 +1424,7 @@
 								<div class="col-lg-3 col-6">
 									<div class="item-checkbox">
 										<label>
-											<input type="checkbox" checked="checked" />
+											<input type="radio" checked="checked" name="r_q3" />
 											<span class="item-checkbox__icon"></span>
 											<span class="item-checkbox__text">На производстве</span>
 										</label>
@@ -1411,7 +1433,7 @@
 								<div class="col-lg-3 col-6">
 									<div class="item-checkbox">
 										<label>
-											<input type="checkbox"/>
+											<input type="radio" name="r_q3"/>
 											<span class="item-checkbox__icon"></span>
 											<span class="item-checkbox__text">Корпоративная одежда</span>
 										</label>
@@ -1420,7 +1442,7 @@
 								<div class="col-lg-3 col-6">
 									<div class="item-checkbox">
 										<label>
-											<input type="checkbox"/>
+											<input type="radio" name="r_q3"/>
 											<span class="item-checkbox__icon"></span>
 											<span class="item-checkbox__text">Лонгслив без утепеления</span>
 										</label>
@@ -1429,7 +1451,7 @@
 								<div class="col-lg-3 col-6">
 									<div class="item-checkbox">
 										<label>
-											<input type="checkbox"/>
+											<input type="radio" name="r_q3"/>
 											<span class="item-checkbox__icon"></span>
 											<span class="item-checkbox__text">Олимпийка тенкая</span>
 										</label>
@@ -1447,7 +1469,7 @@
 								<div class="col-lg-3 col-6">
 									<div class="item-checkbox">
 										<label>
-											<input type="checkbox" checked="checked" />
+											<input type="radio" checked="checked" name="r_q4" />
 											<span class="item-checkbox__icon"></span>
 											<span class="item-checkbox__text">На производстве</span>
 										</label>
@@ -1456,7 +1478,7 @@
 								<div class="col-lg-3 col-6">
 									<div class="item-checkbox">
 										<label>
-											<input type="checkbox"/>
+											<input type="radio" name="r_q4"/>
 											<span class="item-checkbox__icon"></span>
 											<span class="item-checkbox__text">Корпоративная одежда</span>
 										</label>
@@ -1465,7 +1487,7 @@
 								<div class="col-lg-3 col-6">
 									<div class="item-checkbox">
 										<label>
-											<input type="checkbox"/>
+											<input type="radio" name="r_q4"/>
 											<span class="item-checkbox__icon"></span>
 											<span class="item-checkbox__text">Лонгслив без утепеления</span>
 										</label>
@@ -1474,7 +1496,7 @@
 								<div class="col-lg-3 col-6">
 									<div class="item-checkbox">
 										<label>
-											<input type="checkbox"/>
+											<input type="radio" name="r_q4"/>
 											<span class="item-checkbox__icon"></span>
 											<span class="item-checkbox__text">Олимпийка тенкая</span>
 										</label>
@@ -1492,7 +1514,7 @@
 								<div class="col-lg-3 col-6">
 									<div class="item-checkbox">
 										<label>
-											<input type="checkbox" checked="checked" />
+											<input type="radio" checked="checked" name="r_q5" />
 											<span class="item-checkbox__icon"></span>
 											<span class="item-checkbox__text">На производстве</span>
 										</label>
@@ -1501,7 +1523,7 @@
 								<div class="col-lg-3 col-6">
 									<div class="item-checkbox">
 										<label>
-											<input type="checkbox"/>
+											<input type="radio" name="r_q5"/>
 											<span class="item-checkbox__icon"></span>
 											<span class="item-checkbox__text">Корпоративная одежда</span>
 										</label>
@@ -1510,7 +1532,7 @@
 								<div class="col-lg-3 col-6">
 									<div class="item-checkbox">
 										<label>
-											<input type="checkbox"/>
+											<input type="radio" name="r_q5"/>
 											<span class="item-checkbox__icon"></span>
 											<span class="item-checkbox__text">Лонгслив без утепеления</span>
 										</label>
@@ -1519,7 +1541,7 @@
 								<div class="col-lg-3 col-6">
 									<div class="item-checkbox">
 										<label>
-											<input type="checkbox"/>
+											<input type="radio" name="r_q5"/>
 											<span class="item-checkbox__icon"></span>
 											<span class="item-checkbox__text">Олимпийка тенкая</span>
 										</label>
@@ -1535,7 +1557,7 @@
 			</div>
 		</div>
 
-		<div class="portfolio">
+		<div class="portfolio" id="sect_cat2">
 			<div class="container">
 				<div class="title-section title-section_page">Примеры работ</div>
 				<ul class="slider-portfolio arrows-main">
@@ -1636,7 +1658,7 @@
 			</div>
 		</div>
 
-		<div class="questions">
+		<div class="questions" id="sect_cat3">
 			<div class="container">
 				<div class="questions-block">
 					<div class="row">
@@ -1838,7 +1860,7 @@
 <script src="libs/mask/jquery.maskedinput.js"></script>
 <script src="libs/ion.rangeSlider-master/js/ion.rangeSlider.min.js"></script>
 <script src="libs/jQueryFormStyler-master/jquery.formstyler.min.js"></script>
-<script src="js/common.js?ver=1.12"></script>
+<script src="js/common.js?ver=1.20"></script>
 
 <script>
 	function initMap() {

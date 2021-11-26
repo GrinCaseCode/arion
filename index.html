@@ -19,8 +19,8 @@
 	<link rel="stylesheet" href="libs/slick-1.5.9/slick/slick.css" />
 	<link rel="stylesheet" href="libs/slick-1.5.9/slick/slick-theme.css" />
 	<link rel="stylesheet" href="css/fonts.css" />
-	<link rel="stylesheet" href="css/main.css?ver=1.12" />
-	<link rel="stylesheet" href="css/media.css?ver=1.12" />
+	<link rel="stylesheet" href="css/main.css?ver=1.20" />
+	<link rel="stylesheet" href="css/media.css?ver=1.20" />
 </head>
 <body>
 
@@ -39,7 +39,15 @@
 								<p>Пн-Пт 9:00 до 19:00  |  Сб-Вс выходной</p>
 							</div>
 							<div class="header__contacts">
-								<p>Ваш город: <a href="#" class="link-city">Москва</a></p>
+								<div class="city-wrap">
+									<span>Ваш город: </span>
+									<select>
+										<option value="1">Москва</option>
+										<option value="1">Санкт-Петербург</option>
+										<option value="1">Казань</option>
+										<option value="1">Екатеринбург</option>
+									</select>
+								</div>
 								<p>E-mail: <a href="mailto:in@rpk-arion.ru">in@rpk-arion.ru</a></p>
 							</div>
 						</div>
@@ -412,7 +420,15 @@
 						<p>Пн-Пт 9:00 до 19:00  |  Сб-Вс выходной</p>
 					</div>
 					<div class="header__contacts">
-						<p>Ваш город: <a href="#" class="link-city">Москва</a></p>
+						<div class="city-wrap">
+							<span>Ваш город: </span>
+							<select>
+								<option value="1">Москва</option>
+								<option value="1">Санкт-Петербург</option>
+								<option value="1">Казань</option>
+								<option value="1">Екатеринбург</option>
+							</select>
+						</div>
 						<p>E-mail: <a href="mailto:in@rpk-arion.ru">in@rpk-arion.ru</a></p>
 					</div>
 					<div class="menu-mobile__phones">
@@ -1204,7 +1220,7 @@
 								<div class="col-lg-3 col-6">
 									<div class="item-checkbox">
 										<label>
-											<input type="checkbox" checked="checked" />
+											<input type="radio" checked="checked" name="r_c1" />
 											<span class="item-checkbox__image">
 												<img src="img/img-check.jpg" alt="alt">
 											</span>
@@ -1216,7 +1232,7 @@
 								<div class="col-lg-3 col-6">
 									<div class="item-checkbox">
 										<label>
-											<input type="checkbox"/>
+											<input type="radio" name="r_c1"/>
 											<span class="item-checkbox__image">
 												<img src="img/img-check.jpg" alt="alt">
 											</span>
@@ -1228,7 +1244,7 @@
 								<div class="col-lg-3 col-6">
 									<div class="item-checkbox">
 										<label>
-											<input type="checkbox"/>
+											<input type="radio" name="r_c1"/>
 											<span class="item-checkbox__image">
 												<img src="img/img-check.jpg" alt="alt">
 											</span>
@@ -1240,7 +1256,7 @@
 								<div class="col-lg-3 col-6">
 									<div class="item-checkbox">
 										<label>
-											<input type="checkbox"/>
+											<input type="radio" name="r_c1"/>
 											<span class="item-checkbox__image">
 												<img src="img/img-check.jpg" alt="alt">
 											</span>
@@ -1252,7 +1268,7 @@
 								<div class="col-lg-3 col-6">
 									<div class="item-checkbox">
 										<label>
-											<input type="checkbox"/>
+											<input type="radio" name="r_c1"/>
 											<span class="item-checkbox__image">
 												<img src="img/img-check.jpg" alt="alt">
 											</span>
@@ -1264,7 +1280,7 @@
 								<div class="col-lg-3 col-6">
 									<div class="item-checkbox">
 										<label>
-											<input type="checkbox"/>
+											<input type="radio" name="r_c1"/>
 											<span class="item-checkbox__image">
 												<img src="img/img-check.jpg" alt="alt">
 											</span>
@@ -1276,7 +1292,7 @@
 								<div class="col-lg-3 col-6">
 									<div class="item-checkbox">
 										<label>
-											<input type="checkbox"/>
+											<input type="radio" name="r_c1"/>
 											<span class="item-checkbox__image">
 												<img src="img/img-check.jpg" alt="alt">
 											</span>
@@ -1288,7 +1304,7 @@
 								<div class="col-lg-3 col-6">
 									<div class="item-checkbox">
 										<label>
-											<input type="checkbox"/>
+											<input type="radio" name="r_c1"/>
 											<span class="item-checkbox__image">
 												<img src="img/img-check.jpg" alt="alt">
 											</span>
@@ -1308,7 +1324,7 @@
 								<div class="col-lg-3 col-6">
 									<div class="item-checkbox">
 										<label>
-											<input type="checkbox" checked="checked" />
+											<input type="radio" checked="checked" name="r_c2" />
 											<span class="item-checkbox__image">
 												<img src="img/img-check.jpg" alt="alt">
 											</span>
@@ -1320,7 +1336,7 @@
 								<div class="col-lg-3 col-6">
 									<div class="item-checkbox">
 										<label>
-											<input type="checkbox"/>
+											<input type="radio" name="r_c2"/>
 											<span class="item-checkbox__image">
 												<img src="img/img-check.jpg" alt="alt">
 											</span>
@@ -1332,7 +1348,7 @@
 								<div class="col-lg-3 col-6">
 									<div class="item-checkbox">
 										<label>
-											<input type="checkbox"/>
+											<input type="radio" name="r_c2"/>
 											<span class="item-checkbox__image">
 												<img src="img/img-check.jpg" alt="alt">
 											</span>
@@ -1344,7 +1360,7 @@
 								<div class="col-lg-3 col-6">
 									<div class="item-checkbox">
 										<label>
-											<input type="checkbox"/>
+											<input type="radio" name="r_c2"/>
 											<span class="item-checkbox__image">
 												<img src="img/img-check.jpg" alt="alt">
 											</span>
@@ -1356,7 +1372,7 @@
 								<div class="col-lg-3 col-6">
 									<div class="item-checkbox">
 										<label>
-											<input type="checkbox"/>
+											<input type="radio" name="r_c2"/>
 											<span class="item-checkbox__image">
 												<img src="img/img-check.jpg" alt="alt">
 											</span>
@@ -1368,7 +1384,7 @@
 								<div class="col-lg-3 col-6">
 									<div class="item-checkbox">
 										<label>
-											<input type="checkbox"/>
+											<input type="radio" name="r_c2"/>
 											<span class="item-checkbox__image">
 												<img src="img/img-check.jpg" alt="alt">
 											</span>
@@ -1380,7 +1396,7 @@
 								<div class="col-lg-3 col-6">
 									<div class="item-checkbox">
 										<label>
-											<input type="checkbox"/>
+											<input type="radio" name="r_c2"/>
 											<span class="item-checkbox__image">
 												<img src="img/img-check.jpg" alt="alt">
 											</span>
@@ -1392,7 +1408,7 @@
 								<div class="col-lg-3 col-6">
 									<div class="item-checkbox">
 										<label>
-											<input type="checkbox"/>
+											<input type="radio" name="r_c2"/>
 											<span class="item-checkbox__image">
 												<img src="img/img-check.jpg" alt="alt">
 											</span>
@@ -1413,7 +1429,7 @@
 								<div class="col-lg-3 col-6">
 									<div class="item-checkbox">
 										<label>
-											<input type="checkbox" checked="checked" />
+											<input type="radio" checked="checked" name="r_c3" />
 											<span class="item-checkbox__image">
 												<img src="img/img-check.jpg" alt="alt">
 											</span>
@@ -1425,7 +1441,7 @@
 								<div class="col-lg-3 col-6">
 									<div class="item-checkbox">
 										<label>
-											<input type="checkbox"/>
+											<input type="radio" name="r_c3"/>
 											<span class="item-checkbox__image">
 												<img src="img/img-check.jpg" alt="alt">
 											</span>
@@ -1437,7 +1453,7 @@
 								<div class="col-lg-3 col-6">
 									<div class="item-checkbox">
 										<label>
-											<input type="checkbox"/>
+											<input type="radio" name="r_c3"/>
 											<span class="item-checkbox__image">
 												<img src="img/img-check.jpg" alt="alt">
 											</span>
@@ -1449,7 +1465,7 @@
 								<div class="col-lg-3 col-6">
 									<div class="item-checkbox">
 										<label>
-											<input type="checkbox"/>
+											<input type="radio" name="r_c3"/>
 											<span class="item-checkbox__image">
 												<img src="img/img-check.jpg" alt="alt">
 											</span>
@@ -1461,7 +1477,7 @@
 								<div class="col-lg-3 col-6">
 									<div class="item-checkbox">
 										<label>
-											<input type="checkbox"/>
+											<input type="radio" name="r_c3"/>
 											<span class="item-checkbox__image">
 												<img src="img/img-check.jpg" alt="alt">
 											</span>
@@ -1473,7 +1489,7 @@
 								<div class="col-lg-3 col-6">
 									<div class="item-checkbox">
 										<label>
-											<input type="checkbox"/>
+											<input type="radio" name="r_c3"/>
 											<span class="item-checkbox__image">
 												<img src="img/img-check.jpg" alt="alt">
 											</span>
@@ -1485,7 +1501,7 @@
 								<div class="col-lg-3 col-6">
 									<div class="item-checkbox">
 										<label>
-											<input type="checkbox"/>
+											<input type="radio" name="r_c3"/>
 											<span class="item-checkbox__image">
 												<img src="img/img-check.jpg" alt="alt">
 											</span>
@@ -1497,7 +1513,7 @@
 								<div class="col-lg-3 col-6">
 									<div class="item-checkbox">
 										<label>
-											<input type="checkbox"/>
+											<input type="radio" name="r_c3"/>
 											<span class="item-checkbox__image">
 												<img src="img/img-check.jpg" alt="alt">
 											</span>
@@ -1518,7 +1534,7 @@
 								<div class="col-lg-3 col-6">
 									<div class="item-checkbox">
 										<label>
-											<input type="checkbox" checked="checked" />
+											<input type="radio" checked="checked" name="r_c4" />
 											<span class="item-checkbox__image">
 												<img src="img/img-check.jpg" alt="alt">
 											</span>
@@ -1530,7 +1546,7 @@
 								<div class="col-lg-3 col-6">
 									<div class="item-checkbox">
 										<label>
-											<input type="checkbox"/>
+											<input type="radio" name="r_c4"/>
 											<span class="item-checkbox__image">
 												<img src="img/img-check.jpg" alt="alt">
 											</span>
@@ -1542,7 +1558,7 @@
 								<div class="col-lg-3 col-6">
 									<div class="item-checkbox">
 										<label>
-											<input type="checkbox"/>
+											<input type="radio" name="r_c4"/>
 											<span class="item-checkbox__image">
 												<img src="img/img-check.jpg" alt="alt">
 											</span>
@@ -1554,7 +1570,7 @@
 								<div class="col-lg-3 col-6">
 									<div class="item-checkbox">
 										<label>
-											<input type="checkbox"/>
+											<input type="radio" name="r_c4"/>
 											<span class="item-checkbox__image">
 												<img src="img/img-check.jpg" alt="alt">
 											</span>
@@ -1566,7 +1582,7 @@
 								<div class="col-lg-3 col-6">
 									<div class="item-checkbox">
 										<label>
-											<input type="checkbox"/>
+											<input type="radio" name="r_c4"/>
 											<span class="item-checkbox__image">
 												<img src="img/img-check.jpg" alt="alt">
 											</span>
@@ -1578,7 +1594,7 @@
 								<div class="col-lg-3 col-6">
 									<div class="item-checkbox">
 										<label>
-											<input type="checkbox"/>
+											<input type="radio" name="r_c4"/>
 											<span class="item-checkbox__image">
 												<img src="img/img-check.jpg" alt="alt">
 											</span>
@@ -1590,7 +1606,7 @@
 								<div class="col-lg-3 col-6">
 									<div class="item-checkbox">
 										<label>
-											<input type="checkbox"/>
+											<input type="radio" name="r_c4"/>
 											<span class="item-checkbox__image">
 												<img src="img/img-check.jpg" alt="alt">
 											</span>
@@ -1602,7 +1618,7 @@
 								<div class="col-lg-3 col-6">
 									<div class="item-checkbox">
 										<label>
-											<input type="checkbox"/>
+											<input type="radio" name="r_c4"/>
 											<span class="item-checkbox__image">
 												<img src="img/img-check.jpg" alt="alt">
 											</span>
@@ -1623,7 +1639,7 @@
 								<div class="col-lg-3 col-6">
 									<div class="item-checkbox">
 										<label>
-											<input type="checkbox" checked="checked" />
+											<input type="radio" checked="checked" name="r_c5" />
 											<span class="item-checkbox__image">
 												<img src="img/img-check.jpg" alt="alt">
 											</span>
@@ -1635,7 +1651,7 @@
 								<div class="col-lg-3 col-6">
 									<div class="item-checkbox">
 										<label>
-											<input type="checkbox"/>
+											<input type="radio" name="r_c5"/>
 											<span class="item-checkbox__image">
 												<img src="img/img-check.jpg" alt="alt">
 											</span>
@@ -1647,7 +1663,7 @@
 								<div class="col-lg-3 col-6">
 									<div class="item-checkbox">
 										<label>
-											<input type="checkbox"/>
+											<input type="radio" name="r_c5"/>
 											<span class="item-checkbox__image">
 												<img src="img/img-check.jpg" alt="alt">
 											</span>
@@ -1659,7 +1675,7 @@
 								<div class="col-lg-3 col-6">
 									<div class="item-checkbox">
 										<label>
-											<input type="checkbox"/>
+											<input type="radio" name="r_c5"/>
 											<span class="item-checkbox__image">
 												<img src="img/img-check.jpg" alt="alt">
 											</span>
@@ -1671,7 +1687,7 @@
 								<div class="col-lg-3 col-6">
 									<div class="item-checkbox">
 										<label>
-											<input type="checkbox"/>
+											<input type="radio" name="r_c5"/>
 											<span class="item-checkbox__image">
 												<img src="img/img-check.jpg" alt="alt">
 											</span>
@@ -1683,7 +1699,7 @@
 								<div class="col-lg-3 col-6">
 									<div class="item-checkbox">
 										<label>
-											<input type="checkbox"/>
+											<input type="radio" name="r_c5"/>
 											<span class="item-checkbox__image">
 												<img src="img/img-check.jpg" alt="alt">
 											</span>
@@ -1695,7 +1711,7 @@
 								<div class="col-lg-3 col-6">
 									<div class="item-checkbox">
 										<label>
-											<input type="checkbox"/>
+											<input type="radio" name="r_c5"/>
 											<span class="item-checkbox__image">
 												<img src="img/img-check.jpg" alt="alt">
 											</span>
@@ -1707,7 +1723,7 @@
 								<div class="col-lg-3 col-6">
 									<div class="item-checkbox">
 										<label>
-											<input type="checkbox"/>
+											<input type="radio" name="r_c5"/>
 											<span class="item-checkbox__image">
 												<img src="img/img-check.jpg" alt="alt">
 											</span>
@@ -1978,7 +1994,7 @@
 <script src="libs/mask/jquery.maskedinput.js"></script>
 <script src="libs/ion.rangeSlider-master/js/ion.rangeSlider.min.js"></script>
 <script src="libs/jQueryFormStyler-master/jquery.formstyler.min.js"></script>
-<script src="js/common.js?ver=1.12"></script>
+<script src="js/common.js?ver=1.20"></script>
 <!-- Yandex.Metrika counter --><!-- /Yandex.Metrika counter -->
 <!-- Google Analytics counter --><!-- /Google Analytics counter -->
 </body>
