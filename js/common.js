@@ -12,6 +12,7 @@ $(window).scroll(function(){
   
 });
 
+
 if ( $(this).scrollTop() > 0 && $menu.hasClass("default") ){
     $menu.removeClass("default").addClass("fixed");
   } else if($(this).scrollTop() <= 0 && $menu.hasClass("fixed")) {
@@ -32,8 +33,21 @@ $(".item-question__head").click(function() {
 	$(this).parent().siblings(".item-question").removeClass("active");
 	$(this).parent().siblings(".item-question").find(".item-question__content").slideUp(200);
 });
+
+$(".sorting-more").click(function(e) {
+	e.preventDefault();
+	
+	if ($(".sorting-list li:nth-child(n+4)").is(":hidden")) {
+		$(this).html("Показать часть");
+			
+			$(".sorting-list li:nth-child(n+4)").slideDown(200);
+		} else {
+			$(this).html("Еще");
+			$(".sorting-list li:nth-child(n+4)").slideUp(200);
+		}
+});
 	//плавный скролл
-	$(".navigat li a").mPageScroll2id();
+	$(".nav-billbord li a, .sidebar-nav li a").mPageScroll2id();
 
 
 $(".dropdown_haschild > a").click(function(e) {

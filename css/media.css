@@ -1151,9 +1151,15 @@
 	.item-article .title-middle {
 		margin-bottom: 15px;
 	}
-	.page-numbers:not(.next):nth-child(n+6) {
-		display: none;
-	}
+.page-numbers {
+	margin: 0 7px;
+	border: none;
+	width: initial;
+	height: initial;
+}
+.page-numbers.current {
+	color: #E38149;
+}
 	.article {
     padding-bottom: 40px;
     line-height: 24px;
@@ -1239,6 +1245,35 @@ a.tab-contact::after {
 .bottom-contacts {
 	margin-top: 15px;
 }
+.page-numbers.prev,
+ .page-numbers.next {
+	width: 30px;
+	height: 21px;
+	display: block;
+	overflow: hidden;
+}
+.page-numbers.prev svg,
+ .page-numbers.next svg {
+ 	width: 101px;
+ 	height: auto;
+ }
+  .page-numbers.next svg {
+  	float: right;
+  }
+  .page-numbers.prev {
+  	top: 2px;
+  }
+  .page-numbers.next {
+  	top: 12px;
+  }
+  .sorting-wrap {
+  	padding-left: 0;
+  	margin: 0;
+  }
+  .sorting-wrap {
+  	margin-top: 15px;
+  	display: block;
+  }
 }
   
 
@@ -1466,9 +1501,7 @@ a.tab-contact::after {
 	.item-article .title-middle {
 		margin-bottom: 10px;
 	}
-	.page-numbers.prev, .page-numbers.next {
-		width: 60px;
-	}
+
 	.pager {
 		padding: 0 64px;
 	}
