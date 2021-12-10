@@ -3,7 +3,7 @@
 	opacity: 1;
 }
 *:-moz-placeholder {
-	color: #6B6978;
+	color: #6B6978; 
 	opacity: 1;
 }
 *::-moz-placeholder {
@@ -33,7 +33,7 @@ body {
 }
 button {
 	cursor: pointer;
-}
+} 
 h1,h2,h3,h4,h5,h6 {
 	padding: 0;
 	margin: 0;
@@ -3110,10 +3110,10 @@ a.tab-contact:hover::after,
 }
 .city-wrap .jqselect {
 	width: auto;
-	    color: #E38149;
-	    cursor: pointer;
-	    white-space: nowrap;
-	    margin-left: 2px;
+	color: #E38149;
+	cursor: pointer;
+	white-space: nowrap;
+	margin-left: 2px;
 }
 .city-wrap .jq-selectbox__trigger {
 	display: none !important;
@@ -3130,8 +3130,8 @@ a.tab-contact:hover::after,
 .footer p a:hover,
 .footer__bottom a:hover,
 .footer__nav a:hover {
-    color: #E38149;
-    border-color: #E38149;
+	color: #E38149;
+	border-color: #E38149;
 }
 .list-social img {
 	transition: all 0.3s;
@@ -3155,15 +3155,75 @@ a.tab-contact:hover::after,
 	align-items: center;
 }
 .sorting-more {
-	    color: #E38149;
-	    margin-bottom: 8px;
-	    white-space: nowrap;
-    border-bottom: 1px solid #E38149;
-    transition: all 0.3s;
+	color: #E38149;
+	margin-bottom: 8px;
+	white-space: nowrap;
+	border-bottom: 1px solid #E38149;
+	transition: all 0.3s;
 }
 .sorting-more:hover {
 	border-color: transparent;
 }
 #image {
 	display: none;
+}
+
+/*catalog list*/
+.row_list {
+	display: block;
+	margin: 0;
+}
+.row_list > div {
+	-webkit-box-flex: 0;
+	-ms-flex: 0 0 100%;
+	flex: 0 0 100%;
+	max-width: 100%;
+	padding: 0;
+	margin-bottom: 0;
+	margin-top: 20px;
+}
+.row_list .item-card__wrap {
+	position: relative;
+	display: flex;
+	border: none;
+}
+.row_list .item-card__image {
+	height: 485px;
+	width: 41%;
+}
+.row_list .item-card__hover {
+	padding-bottom: 30px;
+	display: block;
+}
+.row_list .item-card .item-feature {
+	display: flex;
+}
+.row_list .item-card .item-feature .title-feature {
+	width: 40%;
+}
+.row_list .title-min_card {
+	height: initial;
+}
+.row_list  .title-min_price {
+	display: inline-block;
+	width: 40%;
+	margin-bottom: 0;
+}
+.row_list .item-card .btn-main {
+	width: initial;
+}
+.row_list .item-card__content {
+	padding-top: 57px;
+	padding-left: 40px;
+}
+.item-card:hover .item-card__wrap {
+	border-color: transparent;
+	box-shadow: 0px 36.1265px 26.5699px rgb(206 217 225 / 7%), 0px 21.2384px 14.6375px rgb(206 217 225 / 7%), 0px 13.0656px 8.28627px rgb(206 217 225 / 7%), 0px 7.97251px 4.50658px rgb(206 217 225 / 6%), 0px 4.63494px 2.21029px rgb(206 217 225 / 6%), 0px 2.41126px 0.871899px rgb(206 217 225 / 5%), 0px 0.940576px 0.196025px rgb(206 217 225 / 4%);
+}
+.row_list .item-card {
+	height: initial;
+	border: none !important;
+}
+.row_list .title-min_price {
+	vertical-align: middle;
 }
